@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "源仓库@plmplmplm",
+    "bookSourceGroup": "🎨漫画",
+    "bookSourceName": "🎨 177漫画🔥",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.177pic.info",
+    "customButton": false,
+    "customOrder": 7832,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "header": "{\n\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/99.0 Safari/537.36\",\n\"Referer\": \"http://www.177pica.com\"\n}\n",
+    "lastUpdateTime": "1768665069022",
+    "loginUrl": "{\n  \"url\": \"\"\n}",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "class.entry-title@text",
+      "kind": "class.single-cat@tag.a@text"
+    },
+    "ruleContent": {
+      "content": "class.single-content@img@src@js:\n// 清理和分割结果\nvar lines = result.split(/[\\r\\n]+/);\nvar html = '';\nfor (var i = 0; i < lines.length; i++) {\n    var url = lines[i]\n        .trim()  // 去除首尾空格\n        .replace(/^[^a-zA-Z]*/, '')  // 去除行首的非字母字符（如└、空格等）\n        .replace(/[^a-zA-Z0-9:/._\\-]+$/, '');  // 去除行尾的特殊字符\n    \n    // 只处理看起来像URL的行\n    if (url.startsWith('http') && (url.includes('.jpg') || url.includes('.png') || url.includes('.jpeg'))) {\n        html += '<img src=\"' + url + '\">\\n';  // 每个标签单独一行\n    }\n}",
+      "imageStyle": "FULL",
+      "nextContentUrl": "class.page-links@tag.a.-1@href"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "bookList": "class.site-main@tag.article||class.post",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "tag.img@src",
+      "lastChapter": "class.date@text",
+      "name": "tag.h2@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.page-links",
+      "chapterName": "tag.span.0@text",
+      "nextTocUrl": "class.next page-numbers@tag.a@href"
+    },
+    "searchUrl": "http://www.177pica.com/?s={{key}}&cat=0",
+    "weight": 0
+  }
+]

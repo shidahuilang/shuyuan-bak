@@ -1,0 +1,60 @@
+[
+  {
+    "bookSourceName": "🍅团夕小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://novel.snssdk.com",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\n\nlet sort = [];\npush = (title, url, type) => sort.push({\n    title: title,\n    url: url,\n    style: {\n        layout_flexBasisPercent: type\n    }\n});\n    push('番茄书架', 'https://fanqienovel.com/reading/bookapi/bookshelf/info/v:version/?aid=1967&iid=0&version_code=56910&update_version_code=56910', 1);\n    push('巅峰榜单', 'https://fanqienovel.com/api/author/misc/top_book_list/v1/?limit=100&offset=0', 0.29);\n    push('出版榜单', 'https://fanqienovel.com/api/node/publication/list?page_index=0&page_count=100', 0.29);\n    push('爆更榜单', 'https://api-lf.fanqiesdk.com/api/novel/channel/homepage/rank/rank_list/v2/?aid=13&limit=50&offset=0&side_type=15&type=1', 0.29);\n    push('黑马榜单', 'https://api-lf.fanqiesdk.com/api/novel/channel/homepage/rank/rank_list/v2/?aid=13&limit=50&offset=0&side_type=13&type=1', 0.29);\n    push('热搜榜单', 'https://api-lf.fanqiesdk.com/api/novel/channel/homepage/rank/rank_list/v2/?aid=13&limit=50&offset=&side_type=12&type=1', 0.29);\t\n    push('每周推荐', 'https://fanqienovel.com/api/rank/recommend/list?type=1&limit=10&offset=0', 0.29);\t\n\t\n\tA=[[\"推荐\",\"10\"],[\"完结\",\"11\"],[\"热搜\",\"12\"]]\t;\n[[\"男频\",\"1\"],[\"女频\",\"0\"]].map([title,id]=>{\n\tpush('❤️'+title+'榜单❤️', null, 1);\n\tif(id==2){ \tA=A.slice(1,A.length-1) }\n\t\tA.map([title,uri]=>{\t\t\t\n\t\t  \turl= `https://novel.snssdk.com/api/novel/channel/homepage/rank/rank_list/v2/?aid=13&app_name=news_article&app_version=9.7.3&channel=tengxun_tt&device_platform=android&os=android&device_type=ProjectTitan&os_api=29&os_version=10&openlive_plugin_status=1&isTTWebViewHeifSupport=0&limit=100&offset={{(page-1)*100}}&side_type=${uri}&type=${id}`;\n\t\t\t\tpush(title, url, 0.29);\t\t\t\n\t\t\t});\n\t});\t\n\t\n\tcategory = () =>{\n\t\t\tcategory_url = \"https://novel.snssdk.com/api/novel/channel/homepage/new_category/page/data/v1/?aid=13\";\nreturn  JSON.parse(java.ajax(category_url)).data\t\t\n\t\t}\n\t\t  \n  json = (data) => {\n     boy = data.boy_category;\n     girl = data.girl_category;\n     publish = data.publish_category;\n     json = [[\"男频\",\"gender=1\",boy],[\"女频\",\"gender=0\",girl],[\"出版\",\"genre_type=160\",publish]];\n     return JSON.parse(JSON.stringify(json));\n   }\t\n\t\tjson(category()).map([tit1,gender,category]=>{\n\t    push('❤️'+tit1+'❤️', null, 1);\n     category.map(($,index)=>{\n     \tindex++;\n\t    title = $.category_name;\n     \tcid = $.category_id;\n\t    url=  `https://novel.snssdk.com/api/novel/channel/homepage/new_category/book_list/v1/?aid=1967&app_name=news_article&app_version=9.7.3&channel=tengxun_tt&creation_status=9&device_platform=android&enter_from=novel_category&novel_host&novel_version&version_code=973&version_name=9.7.3&word_count=9&os=android&device_type=ProjectTitan&os_api=29&os_version=10&offset={{(page-1)*100}}&limit=100&category_id=${cid}&${gender}`;\n\t\t\t\tpush(title, url, 0.29);\t\n      });\n  });\nJSON.stringify(sort);",
+    "header": "{\n\t\"user-agent\":\"Mozilla/5.0 (Linux; Android 10; TAS-AN00 Build/HUAWEITAS-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.61 Mobile Safari/537.36 Super 4.6.5\"\n}",
+    "lastUpdateTime": "1768736466311",
+    "loginUrl": "https://fanqienovel.com",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "author",
+      "coverUrl": "thumb_url",
+      "init": "data[0]",
+      "intro": "&nbsp;&nbsp;\n✏️ 开坑：{{$.create_time##T.*}}\n🕰 更新：{{java.timeFormatUTC(java.getString(\"last_chapter_update_time\")*1000,'yyyy-MM-dd HH:mm:ss',8)}}\n🏷️ 标签：{{$.complete_category##/##,}}\n🏷️ 标签：{{$.tags}}\n👤 主角：{{$.roles##\\[|\\\"|\\]}}\n👁️ 在线：{{$.read_count}}人在读{{'\\n'+'​'}}\n📜 简介：{{$.abstract}}{{'\\n'+'​'}}\n📍 {{$.copyright_info##，.*##。}}\n@js:result.replace(/.+：(人在读)?\\s/g,'')",
+      "kind": "{{$.category}}\n{{$.score}}分\n连载{{$.creation_status}}完结\n{{$.sub_info}}\n@js:result.replace(/连载0完结/g,'完结').replace(/连载1完结/g,'连载').replace(/连载4完结/g,'已断更').replace(/连载-1完结/g,'完结')",
+      "lastChapter": "{{$.last_chapter_title}} • {{java.timeFormat(java.getString('last_chapter_update_time')*1000)}}",
+      "name": "book_name@put:{book_id:book_id}",
+      "tocUrl": "https://fanqienovel.com/api/reader/directory/detail?bookId=@get:{book_id}",
+      "wordCount": "word_number"
+    },
+    "ruleContent": {
+      "content": "$..content"
+    },
+    "ruleExplore": {
+      "author": "author##</?em>",
+      "bookList": "<js>\nlet list = [];\nlet resultData = JSON.parse(result);\n\nlet targetData = resultData.data || resultData.list || resultData.book_list || \n                resultData.publication_list || resultData.result || resultData;\n                \nif (targetData != null && targetData.book_shelf_info) {\n    let bookIds = targetData.book_shelf_info.map(item => `{\"book_id\": \"${item.book_id}\"}`).join(',');\n    \n    let booksData = java.ajax(\n`https://fanqienovel.com/api/bookshelf/multidetail,{\"method\": \"post\",\"body\": {\"books\":[${bookIds}]}}`\n        );\n    \n    let books = JSON.parse(booksData).data.detail_list;\n    for (let i in books) {\n        let d = books[i];\n        list.push({\n            src: d,\n            book_name: d.book_name,\n            author: d.author,\n            category:d.category,\n            tags:d.tags,\n            word_number:d.word_number,\n            lastChapterTitle: d.last_chapter_title,\n            abstract: d.abstract,\n            book_id: d.book_id,\n        });\n    }\n} else {\n    list = targetData.content || targetData;\n}\n\nJSON.stringify({data: list})\n</js>\ndata.data||data.list||book_list||data.publication_list||data.result||data",
+      "bookUrl": "https://reading.snssdk.com/reading/bookapi/multi-detail/v?j=x&book_id={{$.book_id||$.bookId}}&aid=1967&iid=0",
+      "coverUrl": "http://p6-novel.byteimg.com/large/{$.thumb_uri}||$.thumb_url||thumbUri",
+      "intro": "abstract",
+      "kind": "category&&source",
+      "lastChapter": "last_chapter_title",
+      "name": "book_name||bookName",
+      "wordCount": "word_number"
+    },
+    "ruleSearch": {
+      "author": "author##</?em>",
+      "bookList": "$.data.ret_data.*||$..book_info[*]",
+      "bookUrl": "https://api5-normal-sinfonlineb.fqnovel.com/reading/bookapi/multi-detail/v/?aid=1967&iid=1&version_code=999&book_id=@get:{book_id}",
+      "checkKeyWord": "我的26岁女房客",
+      "coverUrl": "thumb_url",
+      "intro": "abstract",
+      "kind": "category&&score",
+      "name": "book_name||title@put:{book_id: book_id}##<em>|</em>|《|》",
+      "wordCount": "连载{{$.creation_status}}完结##连载0|1完结"
+    },
+    "ruleToc": {
+      "chapterList": "$.data.chapterListWithVolume[*].*",
+      "chapterName": "$.title",
+      "chapterUrl": "http://nove.98tx.cn/api/index.php?api=content&item_ids={{$.itemId}}",
+      "updateTime": "发布于 {{java.timeFormat(java.getString('$.firstPassTime')*1000)}}"
+    },
+    "searchUrl": "https://novel.snssdk.com/api/novel/channel/homepage/search/search/v1/?device_platform=android&parent_enterfrom=novel_channel_search.tab.&offset={{(page-1)*10}}&aid=1967&q={{key}}",
+    "weight": 0
+  }
+]

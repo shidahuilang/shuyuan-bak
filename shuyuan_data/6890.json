@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceGroup": "网络小说",
+    "bookSourceName": "苦读书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.kudushu.org",
+    "concurrentRate": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36\"}",
+    "lastUpdateTime": "1768907516232",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "div.divbox > div:first-child > a > img@src",
+      "intro": "div.tabcontent > div.tabvalue:first-child > div@text",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "a.btnlink.b_hot@href"
+    },
+    "ruleContent": {
+      "content": "#clickeye_content@textNodes##\\(苦读书 www\\.kudushu\\.org\\)|苦读书 www\\.kudushu\\.org",
+      "replaceRegex": "",
+      "sourceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span.c_label:contains(作者：)+span.c_value@text",
+      "bookList": "class.c_row",
+      "bookUrl": "span.c_subject > a@href",
+      "coverUrl": "img@src",
+      "kind": "span.c_label:contains(类别：)+span.c_value@text",
+      "lastChapter": "span.c_label:contains(最新章节：)+span.c_value a@text",
+      "name": "span.c_subject > a@text",
+      "wordCount": "span.c_label:contains(字数：)+span.c_value@text"
+    },
+    "ruleToc": {
+      "chapterList": "li.chapter",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "modules/article/search.php?q={{key}}",
+    "weight": 0
+  }
+]

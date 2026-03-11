@@ -1,0 +1,43 @@
+[
+  {
+    "bookSourceComment": "作者：嘻嘻不兮兮\n更换了源，修复正文请求失败的问题",
+    "bookSourceName": "八叉书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://bcshuku.com/",
+    "customOrder": -99974,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "\"accept\": \"application/json, text/javascript, */*; q=0.01\",\n    \"accept-language\": \"zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6\",\n    \"cache-control\": \"no-cache\",\n    \"content-type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\n    \"origin\": \"https://bcshuku.com\",\n    \"pragma\": \"no-cache\",\n    \"priority\": \"u=1, i\",\n    \"sec-ch-ua\": \"\\\"Microsoft Edge\\\";v=\\\"143\\\", \\\"Chromium\\\";v=\\\"143\\\", \\\"Not A(Brand\\\";v=\\\"24\\\"\",\n    \"sec-ch-ua-mobile\": \"?0\",\n    \"sec-ch-ua-platform\": \"\\\"Windows\\\"\",\n    \"sec-fetch-dest\": \"empty\",\n    \"sec-fetch-mode\": \"cors\",\n    \"sec-fetch-site\": \"same-origin\",\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\n    \"x-requested-with\": \"XMLHttpRequest\"\n",
+    "jsLib": "",
+    "lastUpdateTime": "1768662783276",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//div[@class=\"info-chitiet\"]/span/a[@itemprop=\"author\"]/text()",
+      "coverUrl": "//div[@class=\"book\"]/img/@src",
+      "intro": "//div[@itemprop=\"description\"]/text()",
+      "kind": "//div[@class=\"info-chitiet\"]/span/a[@itemprop=\"genre\"]/text()",
+      "name": "//div[@class=\"col-xs-12 col-sm-8 col-md-8 desc\"]/h3/text()",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "@js:\nvar regex = /\\{\"url\"\\s*:\\s*\"[^\"]+\"\\s*,\\s*\"mobile\"\\s*:\\s*\"\\d\"\\s*,\\s*\"isk\"\\s*:\\s*\"\\d\"\\s*,\\s*\"novel\"\\s*:\\s*\"\\d+\"\\s*,\\s*\"chapter\"\\s*:\\s*\"\\d+\"\\}/;\nvar match = result.match(regex);\njava.log(\"refer = \");\r\njava.log(baseUrl);\r\n\nif (match) {\n    try {\n        var jsonObj = JSON.parse(match[0]); \n        // 拼接全部参数（含 novel、chapter）\n        var params = \"url=\" + encodeURIComponent(jsonObj.url) + \n                     \"&mobile=\" + encodeURIComponent(jsonObj.mobile) + \n                     \"&isk=\" + encodeURIComponent(jsonObj.isk) +\n                     \"&novel=\" + encodeURIComponent(jsonObj.novel) +\n                     \"&chapter=\" + encodeURIComponent(jsonObj.chapter);\n        java.log(params);\n\n        let response = java.post(\"https://bcshuku.com/conapi.php\", params, {\n    \"accept\": \"application/json, text/javascript, */*; q=0.01\",\n    \"accept-language\": \"zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6\",\n    \"cache-control\": \"no-cache\",\n    \"content-type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\n    \"origin\": \"https://bcshuku.com\",\n    \"pragma\": \"no-cache\",\n    \"priority\": \"u=1, i\",\n    \"referer\": baseUrl,\n    \"sec-ch-ua\": \"\\\"Microsoft Edge\\\";v=\\\"143\\\", \\\"Chromium\\\";v=\\\"143\\\", \\\"Not A(Brand\\\";v=\\\"24\\\"\",\n    \"sec-ch-ua-mobile\": \"?0\",\n    \"sec-ch-ua-platform\": \"\\\"Windows\\\"\",\n    \"sec-fetch-dest\": \"empty\",\n    \"sec-fetch-mode\": \"cors\",\n    \"sec-fetch-site\": \"same-origin\",\n    \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0\",\n    \"x-requested-with\": \"XMLHttpRequest\"\n});\n        if (response && response.body()) {\n            var content = JSON.parse(response.body())[\"content\"];\n            java.log(content);\n        } else {\n            java.log(\"响应体为空\");\n        }\n    } catch (e) {\n        java.log(\"运行异常: \" + e.message);\n    }\n} else {\n    java.log(\"未匹配到目标 JSON 字符串\");\n}\n"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "bookList": "//div[@class=\"one-row\"]/div[@class=\"col-md-3 col-sm-6 col-xs-6 home-truyendecu\"]",
+      "bookUrl": "//div[@class=\"each_truyen\"]/a/@href",
+      "coverUrl": "//div[@class=\"each_truyen\"]/a/img/@src",
+      "name": "//h3[@itemprop=\"name\"]/text()"
+    },
+    "ruleToc": {
+      "chapterList": "//div[@id='list-chapter']//ul[@class='list-chapter']//li/a",
+      "chapterName": "//span[@class=\"chapter-text\"]/text()",
+      "chapterUrl": "@js:\nvar doc = org.jsoup.Jsoup.parse(result);\nvar link = doc.select(\"a\").first();\n'https://bcshuku.com' + link.attr(\"href\");",
+      "nextTocUrl": "//div[@id=\"pagination\"]//li[last()-1]/a/@href"
+    },
+    "searchUrl": "@js:\nlet new_url = java.get('https://bcshuku.com/e/search/index.php?keyboard='+key+'&show=title%2Cwriter%2Cbyr&searchget=1',{\n    \"accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\",\n    \"accept-language\": \"zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6\",\n    \"cache-control\": \"no-cache\",\n    \"pragma\": \"no-cache\",\n    \"priority\": \"u=0, i\",\n    \"referer\": \"https://bcshuku.com\",\n    \"sec-ch-ua\": \"\\\"Microsoft Edge\\\";v=\\\"143\\\", \\\"Chromium\\\";v=\\\"143\\\", \\\"Not A(Brand\\\";v=\\\"24\\\"\",\n    \"sec-ch-ua-mobile\": \"?1\",\n    \"sec-ch-ua-platform\": \"\\\"Android\\\"\",\n    \"sec-fetch-dest\": \"document\",\n    \"sec-fetch-mode\": \"navigate\",\n    \"sec-fetch-site\": \"same-origin\",\n    \"sec-fetch-user\": \"?1\",\n    \"upgrade-insecure-requests\": \"1\",\n    \"user-agent\": \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36 Edg/143.0.0.0\"\n});\nlet url = 'https://bcshuku.com/e/search/'+ new_url.header(\"location\");\nurl+'page='+page;",
+    "weight": 0
+  }
+]

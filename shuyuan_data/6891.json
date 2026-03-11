@@ -1,0 +1,38 @@
+[
+  {
+    "bookSourceComment": "3qishu.com，qishu99.com，同一个站\n原本的手机版有信息错误并且实际上不能下载，我换成了电脑版，重写了除搜索地址外的全部代码，现在可以正常用了。\n（但是这样一来原来的发现页就不能用了，懒得再写于是把发现页删了）\n2026.1.20 @歌行灯",
+    "bookSourceGroup": "📥 下载",
+    "bookSourceName": "📥 奇书网",
+    "bookSourceType": 3,
+    "bookSourceUrl": "https://www.qishu99.cc",
+    "customButton": false,
+    "customOrder": 32,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "eventListener": false,
+    "lastUpdateTime": "1768912368633",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": ".nrlist > dl > .pic > .pics3@src",
+      "downloadUrls": "https://www.qishu99.cc{{@@text.进入小说下载地址@href}}\n<js>java.ajax(result)</js>\n.downlist[0,1]@li@strong@a@href",
+      "intro": ".softsay_title > .softsayxq > .cont@text##声明：.*"
+    },
+    "ruleContent": [],
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".info@.xm@b@a.1@text",
+      "bookList": ".slist",
+      "bookUrl": ".info > h4 > a@href",
+      "checkKeyWord": "重生空间",
+      "coverUrl": ".pic > a > img@src",
+      "intro": ".info@p.1@text##小说简介：|\\[.+TXT下载\\]",
+      "kind": ".info@.xm@b@a.0@text&&.info@.l@text##发布时间：\\d{4}-\\d{2}-\\d{2} \\| 小说状态：(.+) \\| 小说格式：.+ \\| 小说大小：(.+)##$1,$2",
+      "lastChapter": ".info@.l@font@text",
+      "name": ".info > h4 > a@text##《(.+)》全本TXT电子书下载##$1###"
+    },
+    "ruleToc": [],
+    "searchUrl": "/e/search/index.php,{\n\t\"method\":\"post\",\n\t\"body\":\"show=title,softsay,softwriter&keyboard={{key}}&tbname=download&tempid=1&Submit22=搜索\"\n\t}",
+    "weight": 0
+  }
+]

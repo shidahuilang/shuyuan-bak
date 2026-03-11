@@ -1,0 +1,38 @@
+[
+  {
+    "bookSourceComment": "来源：关耳\n可搜书名和作者\n不能用的话，打开网址看一下是不是换域名了，源URL换成新域名即可\n主站：https://www.aiqu999.com（似乎是一个会自动跳转可用链接的链接）\n备用网址：\n  - www.aiqu654.com\n  - www.aqxsw222.com\n  - www.727txt.com\n  - www.27txt.La\n  - www.527txt.com\n网站给出的防迷路网址：www.272txt.com\n\n2026.01.19\n修复搜索失效（@歌行灯）",
+    "bookSourceGroup": "📥 下载",
+    "bookSourceName": "📥 爱去小说",
+    "bookSourceType": 3,
+    "bookSourceUrl": "https://www.aiqu999.com",
+    "customButton": false,
+    "customOrder": 36,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "eventListener": false,
+    "lastUpdateTime": "1768761330453",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "##作者：([^<]+)##$1###",
+      "downloadUrls": "<js>\nurl = \"http://www.aiqu127.com\"+java.getString(\"@tag.center.3@a@href\");\njava.log(url)\nhtml = java.ajax(url);\n\njava.getStringList(\"@text.下载地址@href\",html,true)\n</js>",
+      "intro": "##小说简介：([\\s\\S]+?)</div##$1###"
+    },
+    "ruleContent": [],
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.search-card-author@a@text##作者：",
+      "bookList": "#searchmain > .search-card",
+      "bookUrl": ".search-card-link@a@href",
+      "checkKeyWord": "穿进赛博游戏后逆袭成神\nhttps://www.aqxsw666.com/txt-xx/nsxs/cycs/txt-240907.htm",
+      "intro": ".search-card-content@text##.+?文案(.+)##$1###",
+      "kind": "{{@@class.search-card-category@tag.a@text}}",
+      "lastChapter": ".search-card-date@.oldDate@text",
+      "name": ".search-card-title@a@text##《|》",
+      "wordCount": ".search-card-content@text##.+?【(.+)】##$1###"
+    },
+    "ruleToc": [],
+    "searchUrl": "/search.asp?word={{key}},{\"charset\":\"gb2312\"}",
+    "weight": 0
+  }
+]

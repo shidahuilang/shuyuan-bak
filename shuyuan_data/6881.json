@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "轻小说web",
+    "bookSourceName": "ncode_syosetu(成为小说家吧)",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ncode.syosetu.com/",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "累計ランキングBEST300::https://yomou.syosetu.com/rank/list/type/total_total/\n年間ランキングBEST300::https://yomou.syosetu.com/rank/list/type/yearly_total/\n四半期ランキングBEST300::https://yomou.syosetu.com/rank/list/type/quarter_total/\n月間ランキングBEST300::https://yomou.syosetu.com/rank/list/type/monthly_total/\n週間ランキングBEST300::https://yomou.syosetu.com/rank/list/type/weekly_total/\n日間ランキングBEST300::https://yomou.syosetu.com/rank/list/type/daily_total/",
+    "header": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36",
+    "lastUpdateTime": "1768603550877",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.p-novel__author@text##作者：",
+      "intro": "id.novel_ex@text",
+      "lastChapter": "class.p-eplist__sublist.-1@tag.a@text",
+      "name": "class.p-novel__title@text"
+    },
+    "ruleContent": {
+      "content": "class.js-novel-text@text||class.p-novel__text@text",
+      "nextContentUrl": "class.c-pager__item--next@href"
+    },
+    "ruleExplore": {
+      "author": "class.h_info@text##小説情報",
+      "bookList": "class.ranking_list",
+      "bookUrl": "class.tl@href",
+      "intro": "class.ex@text",
+      "kind": "class.keyword@tag.a@text",
+      "name": "class.tl@text",
+      "wordCount": "class.marginleft@text"
+    },
+    "ruleSearch": {
+      "author": "tag.a.1@text",
+      "bookList": "class.searchkekka_box",
+      "bookUrl": "class.tl@href",
+      "intro": "tag.td@class.ex@text",
+      "kind": "tag.td@a@text",
+      "lastChapter": "tag.td:contains(最終更新日:)",
+      "name": "class.tl@text",
+      "wordCount": "tag.td@class.marginleft.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.p-eplist__sublist",
+      "chapterName": "class.p-eplist__subtitle@text",
+      "chapterUrl": "class.p-eplist__subtitle@href",
+      "nextTocUrl": "class.c-pager__item--next@href",
+      "updateTime": "class.p-eplist__update@text"
+    },
+    "searchUrl": "https://yomou.syosetu.com/search.php?word={{key}}&p={{page}}",
+    "weight": 0
+  }
+]

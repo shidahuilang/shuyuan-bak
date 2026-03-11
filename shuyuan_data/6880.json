@@ -1,0 +1,68 @@
+[
+  {
+    "bookSourceGroup": "小说",
+    "bookSourceName": "速读谷",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sudugu.org",
+    "bookUrlPattern": "",
+    "concurrentRate": "3",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻小说\",\"url\":\"/xuanhuan/\"}, {\"title\":\"仙侠小说\",\"url\":\"/xianxia/\"}, {\"title\":\"都市小说\",\"url\":\"/dushi/\"}, {\"title\":\"历史小说\",\"url\":\"/lishi/\"}, {\"title\":\"军事小说\",\"url\":\"/junshi/\"}, {\"title\":\"科幻小说\",\"url\":\"/kehuan/\"}, {\"title\":\"言情小说\",\"url\":\"/yanqing/\"}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\"}",
+    "lastUpdateTime": "1768584833228",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.itemtxt@tag.p@tag.a@text",
+      "coverUrl": "class.item@tag.img@src",
+      "downloadUrls": "@put:{id:\"##/(\\\\d+)/##1\"}@js:result='https://www.sudugu.org/txt/?id='+result.id+'&p=1'",
+      "intro": "class.container@class.des bb@tag.p@text",
+      "kind": "class.itemtxt@tag.p.0@tag.span.1@text",
+      "lastChapter": "class.itemtxt@tag.li@tag.a@text##\n发错了\n第4143章 番外3",
+      "name": "tag.h1@tag.a@text## -速读谷",
+      "tocUrl": "{{baseUrl}}/#dir",
+      "wordCount": "class.itemtxt@tag.h1@tag.i@text"
+    },
+    "ruleContent": {
+      "content": "class.con@html##<div.*?>|</div>",
+      "nextContentUrl": "@xpath://div[@class='prenext']//a[contains(text(),'下一页')]/@href"
+    },
+    "ruleExplore": {
+      "author": "tag.p.1@tag.a@text##作者：",
+      "bookList": "class.item",
+      "bookUrl": "tag.h3@tag.a@href",
+      "coverUrl": "tag.img@src",
+      "intro": "",
+      "kind": "tag.p.0@tag.span.1@text",
+      "lastChapter": "tag.ul@tag.li.0@tag.a@text",
+      "name": "tag.h3@tag.a@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "tag.p.1@tag.a@text##作者：",
+      "bookList": "class.item",
+      "bookUrl": "tag.h3@tag.a@href",
+      "checkKeyWord": "轮回乐园",
+      "coverUrl": "tag.img@src",
+      "intro": "",
+      "kind": "tag.p.0@tag.span.1@text",
+      "lastChapter": "tag.ul@tag.li.0@tag.a@text",
+      "name": "tag.h3@tag.a@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "id.list@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href",
+      "isVip": "id.pages@tag.a@href",
+      "nextTocUrl": "@xpath://div[@class='pages bb']//a[contains(text(),'下一页')]/@href"
+    },
+    "searchUrl": "https://www.sudugu.org/i/sor.aspx?key={{key}}",
+    "weight": 0
+  }
+]

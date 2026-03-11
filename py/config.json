@@ -1,0 +1,14 @@
+{
+  "shuyuan_data": 5,
+  "shuyuans_data": 5,
+  "request_timeout": 10,
+  "max_retries": 3,
+  "retry_delay": 1,
+  "max_workers": 5,
+  "log_level": "INFO",
+  "ssl_verify": true,
+  "fallback_urls": {
+    "shuyuan": [],
+    "shuyuans": []
+  }
+}
