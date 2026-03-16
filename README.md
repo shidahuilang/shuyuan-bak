@@ -9,17 +9,17 @@
 
 #### 🚩 IOS软件下载安装：
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/main/大灰狼聚合书库.ipa
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/大灰狼聚合书库.ipa
 ``` 
 #### 🚩 安卓软件下载安装：
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/main/大灰狼聚合书库.APK
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/大灰狼聚合书库.APK
 ``` 
 
 
 #### 🚩 🍅 大灰狼订阅源
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/main/大灰狼订阅源.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/大灰狼订阅源.json
 ```  
 #### 🚩 🍅 番茄融合 用心读书：番茄，七猫，得间，塔读，QQ，小米，熊猫，起点(69/笔趣阁)，喜马拉雅，看书，听书）：ios商店搜索用心读书，用这个邀请码可以优惠10元 HCC0kl0j
 ```
