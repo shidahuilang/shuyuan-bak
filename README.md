@@ -9,38 +9,37 @@
 
 #### 🚩 IOS软件下载安装：
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/大灰狼聚合书库.ipa
+https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/main/大灰狼聚合书库.ipa
 ``` 
 #### 🚩 安卓软件下载安装：
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/大灰狼聚合书库.APK
+https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/main/大灰狼聚合书库.APK
 ``` 
-#### 🚩 IOS15.6-IOS18系统AppFlex安装香色闺阁方法：
-- AppFlex香色闺阁 [视频安装教程](https://m.bilibili.com/video/BV1Ap5xzeEZp?buvid=XX1513F1A6B023DEA52BDE909C516677A32C6&from_spmid=dt.space-dt.video.0&is_story_h5=false&mid=nAD513qeAumJfcSSsFjeOA%3D%3D&p=1&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=b42fa7ba-e311-4cb1-a99b-f7d12d26f78b&share_source=WEIXIN&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1745238613&unique_k=Gb4G4mV&up_id=275649236) [图文安装教程](https://cloudmantoub.online/89/)
+
 
 #### 🚩 🍅 大灰狼订阅源
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/大灰狼订阅源.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/main/大灰狼订阅源.json
 ```  
 #### 🚩 🍅 番茄融合 用心读书：番茄，七猫，得间，塔读，QQ，小米，熊猫，起点(69/笔趣阁)，喜马拉雅，看书，听书）：ios商店搜索用心读书，用这个邀请码可以优惠10元 HCC0kl0j
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/shuyuan/用心读书app-大灰狼融合4.0.mrs
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/用心读书app-大灰狼融合4.0.mrs
 ```
 #### 🚩 🍅 番茄融合 阅读-轻阅读-源阅：番茄，七猫，得间，塔读，QQ，小米，熊猫，起点(69/笔趣阁)，喜马拉雅、看书听书漫画短剧书源）：
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/shuyuan/安卓阅读app-大灰狼融合4.0(完全版).json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/安卓阅读app-大灰狼融合4.0(完全版).json
 ```
 #### 🚩🍅 番茄七猫等IOS书源：（读不舍手+千阅+源阅读+花火阅读）
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/shuyuan/读不舍手app-大灰狼融合4.0(兼容版).json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/读不舍手app-大灰狼融合4.0(兼容版).json
 ```
 #### 🚩 🍅 番茄融合香色闺阁书源：看书、听书、漫画、短剧（正文页面右上角站点登录即可）
 ```
-https://github.com/shidahuilang/shuyuan-bak/blob/shuyuan/香色闺阁app-大灰狼融合4.0.xbs
+https://github.com/shidahuilang/shuyuan-bak/blob/main/香色闺阁app-大灰狼融合4.0.xbs
 ```
 #### 🚩 🍅 番茄融合益达书源：看书、听书、漫画、短剧
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/shuyuan/你的益达app-大灰狼融合4.0.yds
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/你的益达app-大灰狼融合4.0.yds
 ```
 
 **自动更新时间** 2026-01-22 18:32:39 CST+0800
@@ -55,36 +54,36 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/shuyuan/�
 ![shuyuan.png](icons/shuyuan.png)
 #### 🚩 效验书源链接
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/shuyuan/good.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/good.json
 ```
 
 #### 🚩 规则净化
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/jinghua.json
 ```
 #### 🚩 TTS-在线语音包生成[点我](https://tts.yfi.moe/ra?api-site=https%3A%2F%2Ftts.228088.xyz%2F)
 详见[文档](https://github.com/shidahuilang/shuyuan/blob/shuyuan/doc.md)
 #### 🚩 TTS-70种语音包
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/shuyuan/tts.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/tts.json
 ```
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2026-01-22 18:32:39 CST+0800
  ``` bash
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/shuyuan/sourceModelList.xbs
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/sourceModelList.xbs
  ``` 
  ``` bash
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/shuyuan/xsreader/new/resources.txt
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/xsreader/new/resources.txt
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-https://github.com/shidahuilang/shuyuan-bak/raw/shuyuan/aiyueshuxiang.ibs
+https://github.com/shidahuilang/shuyuan-bak/raw/main/aiyueshuxiang.ibs
  ```
 #### 🚩 uz影视源
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/shuyuan/UZ.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/UZ.json
 ```
 #### 🚩 IPTV源
  ```
@@ -96,8 +95,8 @@ https://iptv.228088.xyz/cn.m3u
 #### 🚩 ESign/AltStore/SideStore/锤子助手 巨魔商店应用
 导入链接
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/shuyuan/ipa.json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/ipa.json
 ```
 
-<!-- [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan) -->
+<!-- [![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/main) -->
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=shidahuilang&show_icons=true&theme=radical)
