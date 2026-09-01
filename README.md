@@ -1,11 +1,8 @@
 | **项目名称** | **站点链接**                                                                                     |
 |--------------|--------------------------------------------------------------------------------------------------|
-| **永久发布页** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](http://svip.langge.cf) |
-| **聚合书院4.0** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://api.langge.cf/online_search) |
-| **QQ群组2**   | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://qm.qq.com/q/ZLY2sXBGUY) |
-| **QQ群组3**   | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://qm.qq.com/q/AmapLggTYY) |
+| **永久发布页** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](http://svip.langge.cf) 
 | **TG交流群** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://t.me/dahuilang888) |
-| **QQ频道** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://pd.qq.com/s/9r1k2ik49) |
+
 
 #### 🚩 IOS软件下载安装：
 ```
@@ -90,7 +87,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/main/UZ.json
 https://iptv.228088.xyz/cn.m3u
  ```
 #### 🚩 感谢您使用此项目！
-![zanshang.jpg](icons/zanshang.jpg)
+
 
 #### 🚩 ESign/AltStore/SideStore/锤子助手 巨魔商店应用
 导入链接
