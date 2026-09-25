@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/大�
 ```  
 #### 🚩 🍅 番茄融合 用心读书：番茄，七猫，得间，塔读，QQ，小米，熊猫，起点(69/笔趣阁)，喜马拉雅，看书，听书）：ios商店搜索用心读书，用这个邀请码可以优惠10元 HCC0kl0j
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/用心读书app-大灰狼融合5.0.mrs
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/用心读书app-大灰狼融合5.0(vip).mrs
 ```
 #### 🚩 🍅 番茄融合 阅读-轻阅读-源阅：番茄，七猫，得间，塔读，QQ，小米，熊猫，起点(69/笔趣阁)，喜马拉雅、看书听书漫画短剧书源）：
 ```
@@ -28,13 +28,11 @@ https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/大�
 ```
 #### 🚩🍅 番茄七猫等IOS书源：（读不舍手+千阅+源阅读+花火阅读）
 ```
-https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/读不舍手app-大灰狼融合5.0(兼容版).json
+https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/读不舍手app-大灰狼融合5.0(vip兼容版).json
 ```
 #### 🚩 🍅 番茄融合香色闺阁书源：看书、听书、漫画、短剧（正文页面右上角站点登录即可）
 ```
-https://github.com/shidahuilang/shuyuan-bak/blob/main/香色闺阁app-大灰狼融合5.0.xbs
-```
-#### 🚩 🍅 番茄融合益达书源：看书、听书、漫画、短剧
+https://github.com/shidahuilang/shuyuan-bak/blob/main/香色闺阁app-大灰狼融合5.0(vip).xbs
 ```
 https://raw.githubusercontent.com/shidahuilang/shuyuan-bak/refs/heads/main/你的益达app-大灰狼融合5.0.yds
 ```
